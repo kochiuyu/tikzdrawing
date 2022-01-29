@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{graphpaper}
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.83]{SlutskyEquation.png}
+\vfill
+\begin{tikzpicture}
+%\graphpaper
+
+\draw[->,thick]  (0,0) -- (7,0) node[right]{$x$};
+\draw[->,thick]  (0,0) -- (0,7) node[above]{$y$};
+
+\draw (0,3)--(2,0);
+\draw (0,3)--(6,0);
+
+\draw plot[smooth] coordinates{(0.5,3.5) (0.8,1.8) (2,0.8) (4,0.25)};
+\draw[dashed] (0,1.775)--(3.55,0);
+\draw plot[smooth] coordinates{(3,2.5) (4,1) (6,0.8) };
+
+\filldraw (4,1) circle (0.08);
+\filldraw (0.8,1.8) circle (0.08);
+\filldraw (2,0.8) circle (0.08);
+
+\draw[|->|] (0.8,-0.3)--(2,-0.3) node[midway, below] {sub.};
+\draw[|->|] (2,-0.3)--(4,-0.3) node[midway, below] {inc.};
+\draw[|->|] (0.8,-1)--(4,-1) node[midway, below] {total};
+\end{tikzpicture}
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\draw[->, thick] (0,0) -- (7,0) node[right] {$x$};
+\draw[->, thick] (0,0) -- (0,7) node[above] {$y$};
+
+\draw (0,3) -- (2,0);
+\draw (0,3) -- (6,0);
+\draw[dashed] (0.4,1.5) -- (3.4,0);
+
+\draw plot[smooth] coordinates {(0.5,3) (0.8,1.82) (2,0.73) (5,0.3)};
+\draw plot[smooth] coordinates {(3,3) (4,1) (6,0.65)};
+
+\filldraw (0.8,1.82) circle (0.08);
+\filldraw (2,0.73) circle (0.08);
+\filldraw (4,1) circle (0.08);
+
+\draw[|->|] (0.8,-0.3)--(2,-0.3) node [midway, below] {Sub.};
+\draw[|->|] (2,-0.3)--(4,-0.3) node [midway, below] {Inc.};

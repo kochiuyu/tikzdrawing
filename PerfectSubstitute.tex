@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{graphpaper}
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.83]{PerfectSubstitute.png}
+\vfill
+\begin{tikzpicture}
+%\graphpaper
+
+\draw[->,thick] (0,0) -- (7,0) node[right] {$x$};
+\draw[->,thick] (0,0) -- (0,7) node[above] {$y$};
+
+\draw (0,1) -- (1,0);
+\draw (0,2) -- (2,0);
+\draw (0,3) -- (3,0);
+\draw (0,4) -- (4,0);
+\draw (0,5) -- (5,0);
+\draw (0,6) -- (6,0);
+
+\node at (2.5,5) {$U=x+y$};
+\end{tikzpicture}
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+\draw[thick, ->] (0,0) -- (7,0) node[right] {$x$};
+\draw[thick, ->] (0,0) -- (0,7) node[above] {$y$};
+
+\draw (0,2)--(2,0);
+\draw (0,3)--(3,0);
+\draw (0,4)--(4,0);
+\draw (0,5)--(5,0);
+
+\node at (2,6) {$U=x+y$};

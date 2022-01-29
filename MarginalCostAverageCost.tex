@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{graphpaper}
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.83]{MarginalcostAveragecost.png}
+\vfill
+\begin{tikzpicture}
+%\graphpaper
+\draw[->,thick]  (0,0) -- (7,0) node[right]{$y$};
+\draw[->,thick]  (0,0) -- (0,7) node[above]{Cost};
+
+\draw (0,0)--(5,5) node[right] {MC};
+\draw plot[smooth] coordinates {(1,4) (3,3) (5,4)};
+\node[right] at (5,4) {AC};
+\end{tikzpicture}
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\draw[->,thick]  (0,0) -- (7,0) node[right]{$y$};
+\draw[->,thick]  (0,0) -- (0,7) node[above]{Cost};
+
+\draw (0,0)--(5,5) node[right] {MC};
+\draw plot[smooth] coordinates {(1,4) (3,3) (5,4)};
+\node[right] at (5,4) {AC};

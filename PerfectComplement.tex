@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{graphpaper}
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.83]{PerfectComplement.png}
+\vfill
+\begin{tikzpicture}
+%\graphpaper
+
+\draw[thick, ->] (0,0) -- (7,0) node[right] {$x$};
+\draw[thick, ->] (0,0) -- (0,7) node[above] {$y$};
+
+\draw (1,6)--(1,1)--(6,1) node[right] {$U_1$};
+\draw (2,6)--(2,2)--(6,2) node[right] {$U_2$};
+\draw (3,6)--(3,3)--(6,3) node[right] {$U_3$};
+
+\end{tikzpicture}
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\draw[->,thick] (0,0)--(7,0) node[right]   {$x_1$};
+\draw[->,thick] (0,0)--(0,7) node[above] {$x_2$};
+
+\draw (1,6)--(1,1)--(6,1);
+\draw (2,6)--(2,2)--(6,2);
+\draw (3,6)--(3,3)--(6,3);

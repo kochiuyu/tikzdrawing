@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{graphpaper}
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.83]{OrdinaryGood.png}
+\vfill
+\begin{tikzpicture}
+%\graphpaper
+
+\draw[->, thick] (0,0) -- (7,0) node[right] {$x$};
+\draw[->, thick] (0,0) -- (0,7) node[above] {$y$};
+
+\draw (0,3) -- (3,0);
+\draw (0,3) -- (6,0);
+
+\draw plot[smooth] coordinates {(1,3) (2,1) (3.5,0.5)};
+\draw plot[smooth] coordinates {(3,3) (4,1) (6,0.78)};
+
+\filldraw (2,1) circle (0.08);
+\filldraw (4,1) circle (0.08);
+
+\draw[<->, dotted] (2.2,1)--(3.8,1);
+\end{tikzpicture}
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+\draw[->,thick] (0,0) -- (7,0) node[right] {$x$};
+\draw[->,thick] (0,0) -- (0,7) node[above] {$y$};
+
+\draw (0,3) -- (3,0);
+\draw (0,3) -- (6,0);
+
+\draw plot[smooth] coordinates {(1,3) (2,1) (3,0.5)};
+\draw plot[smooth] coordinates {(3,3) (4,1) (6,0.7)};

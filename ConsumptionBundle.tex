@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{graphpaper}
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.83]{consumptionbundle.png}
+\vfill
+\begin{tikzpicture}
+%\graphpaper
+
+\draw[->,very thick]  (0,0) -- (5,0) node[right] {$x$};
+\draw[->,very thick] (0,0)--(0,5) node[above] {$y$};
+
+\filldraw (3,2) circle (2pt);
+
+\draw[dashed] (0,2)--(3,2);
+\draw[dashed] (3,0)--(3,2);
+
+\node[above right] at (3,2) {$(3,2)$};
+\node[below left] at (0,0) {$0$};
+
+\end{tikzpicture}
+
+
+
+
+
+
+\end{center}
+\end{document}
+
+
+
+
+
+
+
+\graphpaper
+\draw[->,thick] (0,0) -- (8,0) node[right] {$x$};
+\draw[->,thick] (0,0) -- (0,8) node[above] {$y$};
+\filldraw[black] (3,2) circle (2pt);
+\draw[dashed] (3,0)--(3,2);
+\draw[dashed] (0,2)--(3,2);
+\node[above right] at (3,2) {$(3,2)$};
+
+
